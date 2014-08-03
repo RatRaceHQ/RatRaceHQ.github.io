@@ -2707,7 +2707,7 @@ html, body {
   letter-spacing: 7px;
 }
 
-/* line 81, ../scss/app.scss */
+/* line 79, ../scss/app.scss */
 .page-wrapper {
   position: relative;
   outline: 0;
@@ -2715,15 +2715,14 @@ html, body {
   min-height: 500px;
 }
 
-/* line 87, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .content-wrapper {
-  max-width: 50%;
+  width: 50%;
   margin: 0 auto;
   padding: 50px 0;
-  height: 100%;
 }
 
-/* line 93, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .content-wrapper p {
   font-weight: 400;
   font-size: 18px;
@@ -2731,7 +2730,7 @@ html, body {
   margin: 0px 0px 15px 0px;
 }
 
-/* line 99, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .content-wrapper h4 {
   margin-bottom: 25px;
   font-weight: 600;
@@ -2741,7 +2740,7 @@ html, body {
   color: #544f4f;
 }
 
-/* line 107, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 .content-wrapper h6 {
   font-size: 25px;
   font-weight: 400;
@@ -2751,32 +2750,32 @@ html, body {
   margin: 0px 0px 15px 0px;
 }
 
-/* line 117, ../scss/app.scss */
+/* line 116, ../scss/app.scss */
 .breadcrumb_container {
   padding: 5px 20px;
   border-bottom: 1px solid rgba(177, 187, 191, 0.2);
   color: #b1bbbf;
 }
 
-/* line 122, ../scss/app.scss */
+/* line 121, ../scss/app.scss */
 .breadcrumb {
   margin: 0;
   padding: 0;
 }
 
-/* line 126, ../scss/app.scss */
+/* line 125, ../scss/app.scss */
 .breadcrumb p {
   margin: 0;
   padding: 0;
   font-size: .8em;
 }
 
-/* line 131, ../scss/app.scss */
+/* line 130, ../scss/app.scss */
 .breadcrumb span {
   margin: 0 5px;
 }
 
-/* line 140, ../scss/app.scss */
+/* line 139, ../scss/app.scss */
 .navigation {
   position: absolute;
   top: 0;
@@ -2796,24 +2795,30 @@ html, body {
   flex-direction: column;
 }
 
-/* line 163, ../scss/app.scss */
+/* line 162, ../scss/app.scss */
 .navigation:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 169, ../scss/app.scss */
+/* line 168, ../scss/app.scss */
 .navigation.navigation-next {
   right: 0;
 }
 
-/* line 174, ../scss/app.scss */
+/* line 173, ../scss/app.scss */
 .navigation.navigation-prev {
   left: 0;
 }
 
-@media (max-width: 1024px) {
-  /* line 180, ../scss/app.scss */
+/*----navigation ends-----*/
+@media screen and (max-width: 1024px) {
+  /* line 179, ../scss/app.scss */
+  .content-wrapper {
+    width: 65%;
+  }
+
+  /* line 184, ../scss/app.scss */
   .navigation {
     position: static;
     top: auto;
@@ -2823,4 +2828,47 @@ html, body {
     float: left;
   }
 }
-/*----navigation ends-----*/
+@media screen and (max-width: 768px) {
+  /* line 194, ../scss/app.scss */
+  .content-wrapper {
+    width: 85%;
+  }
+
+  /* line 197, ../scss/app.scss */
+  .content-wrapper h6 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 202, ../scss/app.scss */
+  .content-wrapper {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+  /* line 206, ../scss/app.scss */
+  .content-wrapper p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* line 210, ../scss/app.scss */
+  .content-wrapper h6 {
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 217, ../scss/app.scss */
+  .content-wrapper {
+    width: 90%;
+    padding: 15px 0;
+  }
+
+  /* line 224, ../scss/app.scss */
+  .content-wrapper p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
