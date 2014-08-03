@@ -2853,6 +2853,12 @@ html, body {
   }
 
   /* line 213, ../scss/app.scss */
+  .content-wrapper h4 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  /* line 217, ../scss/app.scss */
   .content-wrapper h6 {
     font-size: 17px;
     line-height: 25px;
@@ -2860,19 +2866,13 @@ html, body {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 222, ../scss/app.scss */
+  /* line 226, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 15px 0;
   }
 
-  /* line 226, ../scss/app.scss */
-  .content-wrapper h4 {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  /* line 232, ../scss/app.scss */
+  /* line 231, ../scss/app.scss */
   .content-wrapper p {
     font-size: 16px;
     line-height: 20px;
