@@ -2848,8 +2848,8 @@ html, body {
 
   /* line 209, ../scss/app.scss */
   .content-wrapper p {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   /* line 213, ../scss/app.scss */
@@ -2863,24 +2863,23 @@ html, body {
   .content-wrapper h4 {
     font-size: 25px;
     line-height: 30px;
-    color: red;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 226, ../scss/app.scss */
+  /* line 225, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 15px 0;
   }
 
-  /* line 230, ../scss/app.scss */
+  /* line 229, ../scss/app.scss */
   .content-wrapper h4 {
     font-size: 20px;
     line-height: 25px;
     color: green;
   }
 
-  /* line 236, ../scss/app.scss */
+  /* line 235, ../scss/app.scss */
   .content-wrapper p {
     font-size: 16px;
     line-height: 20px;
