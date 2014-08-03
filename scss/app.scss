@@ -62,7 +62,7 @@ html,body {
 }
 */
 .header-wrapper{
-  border-bottom:3px solid rgba(177, 187, 191, .2); 
+  border-bottom:3px solid rgba(177, 187, 191, .4); 
 }
 //logo
 .logo{
@@ -115,7 +115,7 @@ html,body {
 // Breadcrumb
 .breadcrumb_container {
    padding: 5px 20px;
-   border-bottom:1px solid rgba(177, 187, 191, .2);
+   border-bottom:1px solid rgba(177, 187, 191, .4);
    color: rgba(177, 187, 191, 1);
 }
 .breadcrumb {
@@ -173,8 +173,7 @@ html,body {
 {
   left:0;
 }
-/*----navigation ends-----*/
-
+/*----media queries -----*/
 @media screen and (max-width:1024px) {
   .content-wrapper{
     width: 65%;
@@ -190,6 +189,7 @@ html,body {
     float:left;
   }
 }
+
 @media screen and (max-width:768px){
   .content-wrapper{
     width:85%;
@@ -198,6 +198,7 @@ html,body {
     font-size: 20px;
   }
 }
+
 @media screen and (max-width:480px){
   .content-wrapper{
     width: 90%;
@@ -213,6 +214,7 @@ html,body {
     margin-bottom: 15px;
   }
 }
+
 @media screen and (max-width:320px){
   .content-wrapper{
     width:90%;

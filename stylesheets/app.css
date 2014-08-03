@@ -2690,7 +2690,7 @@ html, body {
 */
 /* line 64, ../scss/app.scss */
 .header-wrapper {
-  border-bottom: 3px solid rgba(177, 187, 191, 0.2);
+  border-bottom: 3px solid rgba(177, 187, 191, 0.4);
 }
 
 /* line 68, ../scss/app.scss */
@@ -2753,7 +2753,7 @@ html, body {
 /* line 116, ../scss/app.scss */
 .breadcrumb_container {
   padding: 5px 20px;
-  border-bottom: 1px solid rgba(177, 187, 191, 0.2);
+  border-bottom: 1px solid rgba(177, 187, 191, 0.4);
   color: #b1bbbf;
 }
 
@@ -2811,14 +2811,14 @@ html, body {
   left: 0;
 }
 
-/*----navigation ends-----*/
+/*----media queries -----*/
 @media screen and (max-width: 1024px) {
-  /* line 179, ../scss/app.scss */
+  /* line 178, ../scss/app.scss */
   .content-wrapper {
     width: 65%;
   }
 
-  /* line 184, ../scss/app.scss */
+  /* line 183, ../scss/app.scss */
   .navigation {
     position: static;
     top: auto;
@@ -2840,19 +2840,19 @@ html, body {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 202, ../scss/app.scss */
+  /* line 203, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 30px 0;
   }
 
-  /* line 206, ../scss/app.scss */
+  /* line 207, ../scss/app.scss */
   .content-wrapper p {
     font-size: 18px;
     line-height: 22px;
   }
 
-  /* line 210, ../scss/app.scss */
+  /* line 211, ../scss/app.scss */
   .content-wrapper h6 {
     font-size: 17px;
     line-height: 25px;
@@ -2860,13 +2860,13 @@ html, body {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 217, ../scss/app.scss */
+  /* line 219, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 15px 0;
   }
 
-  /* line 224, ../scss/app.scss */
+  /* line 226, ../scss/app.scss */
   .content-wrapper p {
     font-size: 16px;
     line-height: 20px;
