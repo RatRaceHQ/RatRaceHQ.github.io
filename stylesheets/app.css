@@ -2861,8 +2861,8 @@ html, body {
 
   /* line 218, ../scss/app.scss */
   .content-wrapper h4 {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 25px;
+    line-height: 30px;
     color: red;
   }
 }
