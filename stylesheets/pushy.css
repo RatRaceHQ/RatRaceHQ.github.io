@@ -12,8 +12,8 @@
     top: 0;
     z-index: 9999;
     background: #FFF;
-    border-right: 1px solid rgba(177, 187, 191, .5);
-   /* -webkit-box-shadow: inset -10px 0 6px -9px rgba(177, 187, 191, .8);
+  /*border-right: 1px solid rgba(177, 187, 191, .5);
+    -webkit-box-shadow: inset -10px 0 6px -9px rgba(177, 187, 191, .8);
     /*  -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7);
     box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, .7); */
     overflow: auto;
@@ -30,7 +30,7 @@
     display: block;
     color: rgba(84, 79, 79, 1);
     padding: 7px 15px;
-    border-bottom: 1px solid rgba(177, 187, 191, .1);
+    border-bottom: 1px solid rgba(177, 187, 191, .4);
     text-decoration: none;
 }
 
