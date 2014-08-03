@@ -1,0 +1,268 @@
+/* prev next nav buttons copied from "human javascript".
+http://fortawesome.github.io/Font-Awesome/icons/  */
+
+.page-inner{max-width:800px;margin:0 auto}
+
+.navigation
+{
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin:0;
+  max-width:150px;
+  min-width:90px;
+  color:rgba(0,0,0,0.2);
+  text-align:center;
+  -webkit-transition:all 350ms ease;
+  transition:all 350ms ease;
+  font-size:40px;
+  /* flex dooesnt work on old IE, firefox , use Js to vertical align icons*/
+  display:flex;
+  justify-content:center;  
+  align-content:center;
+  flex-direction:column;
+  
+  
+}
+
+.book .book-body .navigation:hover
+{
+  text-decoration:none;
+  color:rgba(0,0,0,0.6);
+}
+
+.book .book-body .navigation.navigation-next
+{
+  right:0;
+}
+
+.book .book-body .navigation.navigation-prev
+{
+  left:0;
+}
+
+@media(max-width:1024px) {
+  .navigation
+  {
+    position:static;
+    top:auto;
+    max-width:50%;
+    width:50%;
+    display:inline-block;
+    float:left;
+  }
+}
+
+/*----navigation ends-----*/
+
+/*----Expandable footer ,source:typecast.com-----*/
+
+.bd-embed-notice {
+  background-color:transparent;
+}
+.embed-export-options {
+  background-color:#333333;
+  bottom:0;
+  height:50px;
+  left:0;
+  margin-top:60px;
+  padding:10px 1em 0.25em 0;
+  position:absolute;
+  right:0;
+}
+.embed-export-options.hide {
+  -webkit-box-shadow:none;
+  background-color:transparent;
+  box-shadow:none;
+  left:auto;
+  margin-top:0;
+  width:200px;
+}
+.embed-export-options ul {
+  float:left;
+}
+.embed-export-options ul li {
+  display:inline-block;
+  position:relative;
+}
+.embed-export-options ul li div.app-tooltip {
+  -webkit-transition:opacity 200ms;
+  bottom:3.6em;
+  box-sizing:border-box;
+  left:50%;
+  margin-left:-6.5em;
+  opacity:0;
+  padding:1em;
+  right:auto;
+  text-align:center;
+  top:auto;
+  transition:opacity 200ms;
+  visibility:hidden;
+  width:13.5em;
+}
+.embed-export-options ul li div.app-tooltip p {
+  font-size:0.875em;
+  line-height:1.4;
+  margin-bottom:0;
+  text-align:center;
+}
+.embed-export-options ul li div.app-tooltip::after {
+  border-color:rgba(0, 0, 0, 0.901961) transparent transparent;
+  border-width:6px;
+  bottom:-12px;
+  left:50%;
+  margin-left:-6px;
+  top:auto;
+}
+.embed-export-options .export-link {
+  -webkit-font-smoothing:antialiased;
+  background-color:transparent;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  border:none;
+  color:#FFFFFF;
+  cursor:pointer;
+  display:inline-block;
+  font-family:myriad-pro, Arial, Helvetica, Calibri, sans-serif;
+  font-size:0.9375em;
+  font-weight:600;
+  padding:0.5em 0.5em 0.5em 1.5em;
+  text-decoration:none;
+}
+.embed-export-options .export-link:active, .embed-export-options .export-link:focus {
+  outline:none;
+}
+.embed-export-options .export-link.fade {
+  opacity:0.5;
+}
+.embed-export-options .export-link.disabled {
+  cursor:default;
+  opacity:0.25 !important;
+}
+.embed-export-options .export-link::before {
+  -webkit-font-smoothing:antialiased;
+  font-family:icomoon;
+  font-size:1em;
+  font-style:normal;
+  font-weight:normal;
+  margin-right:0.5em;
+  margin-top:1px;
+  speak:none;
+}
+.embed-export-options .export-link span {
+  display:none;
+}
+.embed-export-options .export-link::after {
+  content:attr(data-short-name);
+}
+.embed-export-options .export-link#export-embed-code::before {
+  content:'';
+  margin-right:0.3em;
+}
+.embed-export-options .export-link#export-html-css::before {
+  content:'';
+}
+.embed-export-options .export-link#export-png-image-transparent::before {
+  content:'';
+}
+.embed-export-options .export-link#export-styleguide::before {
+  content:'';
+  margin-right:0.3em;
+}
+.embed-export-options .export-link#export-copy-link::before {
+  content:'';
+  margin-right:0.3em;
+}
+.embed-export-options .export-link:hover + div.app-tooltip, .embed-export-options .export-link.zeroclipboard-is-hover + div.app-tooltip {
+  opacity:1;
+  visibility:visible;
+}
+.embed-export-options button.control {
+  background-color:transparent;
+  border:none;
+  color:#FFFFFF;
+  cursor:pointer;
+  float:right;
+  font-family:myriad-pro, Arial, Helvetica, Calibri, sans-serif;
+  font-size:0.9375em;
+  margin:0.3em 0.3em 0 0;
+  outline:none;
+  padding:0.4em;
+  text-decoration:none;
+}
+.embed-export-options button.control::after {
+  -webkit-font-smoothing:antialiased;
+  color:#FFFFFF;
+  content:'';
+  display:inline-block;
+  font-family:icomoon;
+  font-size:12px;
+  font-style:normal;
+  font-weight:normal;
+  margin-left:0.6em;
+  speak:none;
+  vertical-align:middle;
+  width:auto;
+}
+.embed-export-options button.control:hover {
+  color:rgba(255, 255, 255, 0.74902);
+}
+.embed-export-options button.control:hover::after {
+  color:rgba(255, 255, 255, 0.74902);
+}
+.embed-export-options button#show-export-options.control {
+  background-color:#333333;
+  border-bottom-left-radius:100%;
+  border-bottom-right-radius:100%;
+  border-top-left-radius:100%;
+  border-top-right-radius:100%;
+  color:#FFFFFF;
+  margin-right:0;
+  margin-top:0.2em;
+}
+.embed-export-options button#show-export-options.control span {
+  display:none;
+}
+.embed-export-options button#show-export-options.control::after {
+  -webkit-transform:translate(0px, -1px);
+  content:'';
+  margin-left:0.3em;
+  padding-right:0.3em;
+}
+.embed-export-options button#show-export-options.control:hover {
+  background-color:rgba(51, 51, 51, 0.74902);
+}
+.embed-export-options h3 {
+  font-size:1.2em;
+  font-weight:600;
+  margin-bottom:0;
+}
+.embed-export-options.webserver {
+  background-color:#CC6633;
+  color:#FFFFFF;
+  padding-bottom:20px;
+  padding-left:60px;
+}
+.embed-export-options.propagating {
+  padding-left:60px;
+}
+.embed-export-options.propagating .icon {
+  background-color:transparent;
+  background-image:url(http://typecast.com/images/site/embed-reload.png);
+  background-position:50% 50%;
+  background-repeat:no-repeat no-repeat;
+  height:38px;
+  left:1em;
+  margin-right:1em;
+  margin-top:-9px;
+  position:absolute;
+  top:50%;
+  width:38px;
+}
+.embed-export-options .export-link span {
+  display:inline;
+}
+.embed-export-options .export-link::after {
+  content:'';
+}
+/*----footer ends-----*/
