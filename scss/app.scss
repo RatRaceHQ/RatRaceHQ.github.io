@@ -173,7 +173,9 @@ html,body {
 {
   left:0;
 }
+
 /*----media queries -----*/
+
 @media screen and (max-width:1024px) {
   .content-wrapper{
     width: 65%;
@@ -213,6 +215,10 @@ html,body {
     line-height: 25px;
     margin-bottom: 15px;
   }
+  .content-wrapper h4{
+    font-size: 25px;
+    line-height: 30px
+  }
 }
 
 @media screen and (max-width:320px){
@@ -220,7 +226,8 @@ html,body {
     width:90%;
     padding:15px 0;
   }
-  .content-wrapper h6{
+  .content-wrapper h4{
+
     
   }
   .content-wrapper p{
