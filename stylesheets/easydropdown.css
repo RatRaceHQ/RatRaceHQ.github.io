@@ -24,11 +24,9 @@
 
 .dropdown{
 	position: relative;
-	width: 160px;
-	border: 1px solid #ccc;
+	margin: 20px 10px 5px 10px;
 	cursor: pointer;
-	background: #fff;
-
+	background:rgba(84, 79, 79, 1);
 	border-radius: 3px;
 	
 	-webkit-user-select: none;
@@ -41,11 +39,11 @@
 }
 
 .dropdown:hover{
-	box-shadow: 0 0 5px rgba(0,0,0,.15);
+	background:rgba(84, 79, 79, .8);
 }
 
 .dropdown.focus{
-	box-shadow: 0 0 5px rgba(51,102,248,.4);
+	background:rgba(84, 79, 79, .8);
 }
 
 /* CARAT */
@@ -56,7 +54,7 @@
 	top: 50%;
 	margin-top: -4px;
 	border: 6px solid transparent;
-	border-top: 8px solid #000;
+	border-top: 8px solid #FFF;
 }
 
 .dropdown.open .carat{
@@ -98,16 +96,18 @@
 }
 
 /* SELECTED FEEDBACK ITEM */ 
-
 .dropdown .selected,
 .dropdown li{
 	display: block;
-	font-size: 18px;
+	font-size: 1em;
 	line-height: 1;
-	color: #000;
+	color: rgba(84, 79, 79, 1);
 	padding: 9px 12px;
 	overflow: hidden;
 	white-space: nowrap;
+}
+.dropdown .selected{
+	color:#FFF;
 }
 
 .dropdown.disabled .selected{
@@ -123,7 +123,7 @@
 	width: 60px;
 	
 	border-radius: 0 2px 2px 0;
-	box-shadow: inset -55px 0 25px -20px #fff;
+/*	box-shadow: inset -55px 0 25px -20px #fff;*/
 }
 
 /* DROP DOWN WRAPPER */
@@ -193,7 +193,7 @@
 /* .focus class is also added on hover */
 
 .dropdown li.focus{
-	background: #d24a67;
+	background: rgba(84, 79, 79, 1);
 	position: relative;
 	z-index: 3;
 	color: #fff;

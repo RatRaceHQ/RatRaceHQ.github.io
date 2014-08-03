@@ -2651,18 +2651,28 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 42, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+
+/* line 46, ../scss/app.scss */
 html {
   height: 100%;
 }
 
-/* line 43, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 body {
   min-height: 100%;
 }
 
 /* added for pushy offcanvas menu*/
-/* line 48, ../scss/app.scss */
+/* line 52, ../scss/app.scss */
 html, body {
   overflow-x: hidden;
   /* prevents horizontal scroll bars */
@@ -2678,18 +2688,18 @@ html, body {
 	
 }
 */
-/* line 60, ../scss/app.scss */
+/* line 64, ../scss/app.scss */
 .header-wrapper {
   border-bottom: 3px solid rgba(177, 187, 191, 0.2);
 }
 
-/* line 64, ../scss/app.scss */
+/* line 68, ../scss/app.scss */
 .logo {
   text-align: center;
   padding: 10px 0;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
 .logo span {
   font-size: 1.5em;
   color: #544f4f;
@@ -2697,7 +2707,7 @@ html, body {
   letter-spacing: 7px;
 }
 
-/* line 77, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 .page-wrapper {
   position: relative;
   outline: 0;
@@ -2705,7 +2715,7 @@ html, body {
   min-height: 500px;
 }
 
-/* line 83, ../scss/app.scss */
+/* line 87, ../scss/app.scss */
 .content-wrapper {
   max-width: 50%;
   margin: 0 auto;
@@ -2713,7 +2723,7 @@ html, body {
   height: 100%;
 }
 
-/* line 89, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 .content-wrapper p {
   font-weight: 400;
   font-size: 18px;
@@ -2721,7 +2731,7 @@ html, body {
   margin: 0px 0px 15px 0px;
 }
 
-/* line 95, ../scss/app.scss */
+/* line 99, ../scss/app.scss */
 .content-wrapper h4 {
   margin-bottom: 25px;
   font-weight: 600;
@@ -2731,7 +2741,7 @@ html, body {
   color: #544f4f;
 }
 
-/* line 103, ../scss/app.scss */
+/* line 107, ../scss/app.scss */
 .content-wrapper h6 {
   font-size: 25px;
   font-weight: 400;
@@ -2741,32 +2751,32 @@ html, body {
   margin: 0px 0px 15px 0px;
 }
 
-/* line 113, ../scss/app.scss */
+/* line 117, ../scss/app.scss */
 .breadcrumb_container {
   padding: 5px 20px;
   border-bottom: 1px solid rgba(177, 187, 191, 0.2);
   color: #b1bbbf;
 }
 
-/* line 118, ../scss/app.scss */
+/* line 122, ../scss/app.scss */
 .breadcrumb {
   margin: 0;
   padding: 0;
 }
 
-/* line 122, ../scss/app.scss */
+/* line 126, ../scss/app.scss */
 .breadcrumb p {
   margin: 0;
   padding: 0;
   font-size: .8em;
 }
 
-/* line 127, ../scss/app.scss */
+/* line 131, ../scss/app.scss */
 .breadcrumb span {
   margin: 0 5px;
 }
 
-/* line 136, ../scss/app.scss */
+/* line 140, ../scss/app.scss */
 .navigation {
   position: absolute;
   top: 0;
@@ -2786,24 +2796,24 @@ html, body {
   flex-direction: column;
 }
 
-/* line 159, ../scss/app.scss */
+/* line 163, ../scss/app.scss */
 .navigation:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 165, ../scss/app.scss */
+/* line 169, ../scss/app.scss */
 .navigation.navigation-next {
   right: 0;
 }
 
-/* line 170, ../scss/app.scss */
+/* line 174, ../scss/app.scss */
 .navigation.navigation-prev {
   left: 0;
 }
 
 @media (max-width: 1024px) {
-  /* line 176, ../scss/app.scss */
+  /* line 180, ../scss/app.scss */
   .navigation {
     position: static;
     top: auto;
