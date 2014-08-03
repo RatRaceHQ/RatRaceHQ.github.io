@@ -1,0 +1,190 @@
+@import "settings";
+// @import "foundation";
+// Or selectively include components
+   @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+    "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+     "foundation/components/type",
+//   "foundation/components/offcanvas",
+     "foundation/components/visibility";
+
+     
+html {height: 100%;}
+body {
+    min-height: 100%;
+    
+}
+/* added for pushy offcanvas menu*/
+html,body {
+  overflow-x: hidden; /* prevents horizontal scroll bars */
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* disable webkit tap highlight */
+  height: 100%; /* fixes focus scrolling in Safari (OS X) */
+}
+
+/*.column,.columns {
+	;border: 1px solid black;
+	
+	
+}
+*/
+.header-wrapper{
+  border-bottom:3px solid rgba(177, 187, 191, .2); 
+}
+//logo
+.logo{
+  text-align: center;
+  padding:10px 0;
+}
+.logo span{
+  font-size:1.5em;
+  color: rgba(84, 79, 79, 1);
+  font-weight: 400;
+  letter-spacing: 7px;
+}
+
+
+
+.page-wrapper{
+	position:relative;
+	outline:0;
+  height: 1px;  //for enabling 100% height property in child i.e content_wrapper
+  min-height: 500px;
+}
+.content-wrapper{
+	max-width:50%;
+	margin:0 auto;
+  padding:50px 0;
+  height: 100%;
+}
+.content-wrapper p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0px 0px 15px 0px;
+}
+.content-wrapper h4{
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  text-indent: 0px;
+  color: rgba(84, 79, 79, 1);
+}
+.content-wrapper h6{
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  color: rgba(177, 187, 191, 1);
+  text-align: center;
+  margin: 0px 0px 15px 0px;
+}
+
+// Breadcrumb
+.breadcrumb_container {
+   padding: 5px 20px;
+   border-bottom:1px solid rgba(177, 187, 191, .2);
+   color: rgba(177, 187, 191, 1);
+}
+.breadcrumb {
+  margin:0;
+  padding:0;
+}
+.breadcrumb p {
+  margin:0;
+  padding:0;
+  font-size: .8em;
+}
+.breadcrumb span {
+  margin:0 5px;
+}
+//
+
+
+
+// Prev/Next Navigation
+.navigation
+{
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin:0;
+  max-width:150px;
+  min-width:90px;
+  color:rgba(0,0,0,0.2);
+  text-align:center;
+  -webkit-transition:all 350ms ease;
+  transition:all 350ms ease;
+  font-size:40px;
+  /* flex dooesnt work on old IE, firefox , use Js to vertical align icons*/
+  display:flex;
+  justify-content:center;  
+  align-content:center;
+  flex-direction:column;
+  
+  
+  
+}
+
+.navigation:hover
+{
+  text-decoration:none;
+  color:rgba(0,0,0,0.6);
+}
+
+.navigation.navigation-next
+{
+  right:0;
+}
+
+.navigation.navigation-prev
+{
+  left:0;
+}
+
+@media(max-width:1024px) {
+  .navigation
+  {
+    position:static;
+    top:auto;
+    max-width:50%;
+    width:50%;
+    display:inline-block;
+    float:left;
+  }
+}
+
+/*----navigation ends-----*/
+
+
+
+
