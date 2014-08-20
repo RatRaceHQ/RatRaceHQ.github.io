@@ -16,6 +16,7 @@
     <script src="js/pushy.js"></script>
     <script src="js/jquery.easydropdown.min.js"></script>
     <script src="js/mousetrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
 </head>
 <body>
 	
@@ -82,10 +83,30 @@
 
 	  <footer></footer>
 	</div><!--wrapper ends-->
+
+
 <script >
-Mousetrap.bind('right', function() { console.log('next');});
-Mousetrap.bind('left', function() { console.log('prev'); });
-</script>	
+//keyboard shortcuts for next and prev
+Mousetrap.bind('right', function() { window.location.href = "http://stackoverflow.com";});
+Mousetrap.bind('left', function() { window.location.href = "http://google.com"; });
+
+//swipe function for touch devices
+$(function() {
+        //Enable swiping...
+        $(".content-wrapper").swipe({
+            //Generic swipe handler for all directions
+            swipeLeft: function(event, direction, distance, duration, fingerCount) {
+                window.location.href = "http://stackoverflow.com";
+            },
+            swipeRight: function(event, direction, distance, duration, fingerCount) {
+                window.location.href = "http://google.com";
+            },
+            threshold: 0
+        });
+    });
+
+</script>
+
 </body>
 
 </html>
