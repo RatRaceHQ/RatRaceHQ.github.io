@@ -135,7 +135,7 @@ html,body {
 
 
 // Prev/Next Navigation
-.navigation_container
+.navigation
 {
   position:absolute;
   top:0;
@@ -148,13 +148,13 @@ html,body {
   -webkit-transition:all 350ms ease;
   transition:all 350ms ease;
   font-size:40px;
-  /* flex dooesnt work on old IE, firefox , use Js to vertical align icons
+  /* flex dooesnt work on old IE, firefox , use Js to vertical align icons*/
   display:flex;
   justify-content:center;  
   align-content:center;
-  flex-direction:column;*/
+  flex-direction:column;
 }
-.navigation{
+.nav_icon{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -187,7 +187,7 @@ html,body {
     width: 65%;
   }
 
-  .navigation_container
+  .navigation
   {
     position:static;
     top:auto;
