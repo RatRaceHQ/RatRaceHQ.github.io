@@ -2776,7 +2776,7 @@ html, body {
 }
 
 /* line 139, ../scss/app.scss */
-.navigation {
+.navigation_container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2788,38 +2788,47 @@ html, body {
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
   font-size: 40px;
-  /* flex dooesnt work on old IE, firefox , use Js to vertical align icons*/
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+  /* flex dooesnt work on old IE, firefox , use Js to vertical align icons
+  display:flex;
+  justify-content:center;  
+  align-content:center;
+  flex-direction:column;*/
 }
 
-/* line 162, ../scss/app.scss */
+/* line 157, ../scss/app.scss */
+.navigation {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+/* line 166, ../scss/app.scss */
 .navigation:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 168, ../scss/app.scss */
-.navigation.navigation-next {
+/* line 172, ../scss/app.scss */
+.navigation-next {
   right: 0;
 }
 
-/* line 173, ../scss/app.scss */
-.navigation.navigation-prev {
+/* line 178, ../scss/app.scss */
+.navigation-prev {
   left: 0;
 }
 
 /*----media queries -----*/
 @media screen and (max-width: 1024px) {
-  /* line 180, ../scss/app.scss */
+  /* line 186, ../scss/app.scss */
   .content-wrapper {
     width: 65%;
   }
 
-  /* line 185, ../scss/app.scss */
-  .navigation {
+  /* line 191, ../scss/app.scss */
+  .navigation_container {
     position: static;
     top: auto;
     max-width: 50%;
@@ -2829,36 +2838,36 @@ html, body {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 196, ../scss/app.scss */
+  /* line 202, ../scss/app.scss */
   .content-wrapper {
     width: 85%;
   }
 
-  /* line 199, ../scss/app.scss */
+  /* line 205, ../scss/app.scss */
   .content-wrapper h6 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 205, ../scss/app.scss */
+  /* line 211, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 30px 0;
   }
 
-  /* line 209, ../scss/app.scss */
+  /* line 215, ../scss/app.scss */
   .content-wrapper p {
     font-size: 18px;
     line-height: 23px;
   }
 
-  /* line 213, ../scss/app.scss */
+  /* line 219, ../scss/app.scss */
   .content-wrapper h4 {
     font-size: 22px;
     line-height: 25px;
   }
 
-  /* line 217, ../scss/app.scss */
+  /* line 223, ../scss/app.scss */
   .content-wrapper h6 {
     font-size: 17px;
     line-height: 25px;
@@ -2866,13 +2875,13 @@ html, body {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 226, ../scss/app.scss */
+  /* line 232, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 15px 0;
   }
 
-  /* line 231, ../scss/app.scss */
+  /* line 237, ../scss/app.scss */
   .content-wrapper p {
     font-size: 16px;
     line-height: 20px;
