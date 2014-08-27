@@ -154,7 +154,8 @@ html,body {
   align-content:center;
   flex-direction:column;
 }
-.nav_icon{
+/* vertical centering */
+.vertical-center{
   position: relative;
   top: 50%;
   transform: translateY(-50%);
