@@ -2690,7 +2690,7 @@ html, body {
 */
 /* line 64, ../scss/app.scss */
 .header-wrapper {
-  border-bottom: 3px solid rgba(177, 187, 191, 0.4);
+  border-bottom: 1px solid rgba(177, 187, 191, 0.4);
 }
 
 /* line 68, ../scss/app.scss */
