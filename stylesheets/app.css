@@ -2696,18 +2696,10 @@ html, body {
 /* line 68, ../scss/app.scss */
 .logo {
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
-/* line 72, ../scss/app.scss */
-.logo span {
-  font-size: 1.5em;
-  color: #544f4f;
-  font-weight: 400;
-  letter-spacing: 7px;
-}
-
-/* line 79, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 .page-wrapper {
   position: relative;
   outline: 0;
@@ -2715,14 +2707,14 @@ html, body {
   min-height: 500px;
 }
 
-/* line 85, ../scss/app.scss */
+/* line 80, ../scss/app.scss */
 .content-wrapper {
   width: 50%;
   margin: 0 auto;
   padding: 50px 0;
 }
 
-/* line 92, ../scss/app.scss */
+/* line 87, ../scss/app.scss */
 .content-wrapper p {
   font-weight: 400;
   font-size: 18px;
@@ -2730,7 +2722,7 @@ html, body {
   margin: 0px 0px 15px 0px;
 }
 
-/* line 98, ../scss/app.scss */
+/* line 93, ../scss/app.scss */
 .content-wrapper h4 {
   margin-bottom: 25px;
   font-weight: 600;
@@ -2740,7 +2732,7 @@ html, body {
   color: #544f4f;
 }
 
-/* line 106, ../scss/app.scss */
+/* line 101, ../scss/app.scss */
 .content-wrapper h6 {
   font-size: 25px;
   font-weight: 400;
@@ -2750,32 +2742,32 @@ html, body {
   margin: 0px 0px 15px 0px;
 }
 
-/* line 116, ../scss/app.scss */
+/* line 111, ../scss/app.scss */
 .breadcrumb_container {
   padding: 5px 20px;
   border-bottom: 1px solid rgba(177, 187, 191, 0.4);
   color: #b1bbbf;
 }
 
-/* line 121, ../scss/app.scss */
+/* line 116, ../scss/app.scss */
 .breadcrumb {
   margin: 0;
   padding: 0;
 }
 
-/* line 125, ../scss/app.scss */
+/* line 120, ../scss/app.scss */
 .breadcrumb p {
   margin: 0;
   padding: 0;
   font-size: .8em;
 }
 
-/* line 130, ../scss/app.scss */
+/* line 125, ../scss/app.scss */
 .breadcrumb span {
   margin: 0 5px;
 }
 
-/* line 139, ../scss/app.scss */
+/* line 134, ../scss/app.scss */
 .navigation {
   position: absolute;
   top: 0;
@@ -2796,7 +2788,7 @@ html, body {
 }
 
 /* vertical centering */
-/* line 158, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 .vertical-center {
   position: relative;
   top: 50%;
@@ -2805,30 +2797,30 @@ html, body {
   -ms-transform: translateY(-50%);
 }
 
-/* line 167, ../scss/app.scss */
+/* line 162, ../scss/app.scss */
 .navigation:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 173, ../scss/app.scss */
+/* line 168, ../scss/app.scss */
 .navigation-next {
   right: 0;
 }
 
-/* line 179, ../scss/app.scss */
+/* line 174, ../scss/app.scss */
 .navigation-prev {
   left: 0;
 }
 
 /*----media queries -----*/
 @media screen and (max-width: 1024px) {
-  /* line 187, ../scss/app.scss */
+  /* line 182, ../scss/app.scss */
   .content-wrapper {
     width: 65%;
   }
 
-  /* line 192, ../scss/app.scss */
+  /* line 187, ../scss/app.scss */
   .navigation {
     position: static;
     top: auto;
@@ -2839,36 +2831,36 @@ html, body {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 203, ../scss/app.scss */
+  /* line 198, ../scss/app.scss */
   .content-wrapper {
     width: 85%;
   }
 
-  /* line 206, ../scss/app.scss */
+  /* line 201, ../scss/app.scss */
   .content-wrapper h6 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 212, ../scss/app.scss */
+  /* line 207, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 30px 0;
   }
 
-  /* line 216, ../scss/app.scss */
+  /* line 211, ../scss/app.scss */
   .content-wrapper p {
     font-size: 18px;
     line-height: 23px;
   }
 
-  /* line 220, ../scss/app.scss */
+  /* line 215, ../scss/app.scss */
   .content-wrapper h4 {
     font-size: 22px;
     line-height: 25px;
   }
 
-  /* line 224, ../scss/app.scss */
+  /* line 219, ../scss/app.scss */
   .content-wrapper h6 {
     font-size: 17px;
     line-height: 25px;
@@ -2876,13 +2868,13 @@ html, body {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 233, ../scss/app.scss */
+  /* line 228, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 15px 0;
   }
 
-  /* line 238, ../scss/app.scss */
+  /* line 233, ../scss/app.scss */
   .content-wrapper p {
     font-size: 16px;
     line-height: 20px;
