@@ -2725,11 +2725,11 @@ html, body {
 /* line 93, ../scss/app.scss */
 .content-wrapper h4 {
   margin-bottom: 25px;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 33px;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 32px;
   text-indent: 0px;
-  color: #544f4f;
+  color: #111111;
 }
 
 /* line 101, ../scss/app.scss */
