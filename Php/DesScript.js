@@ -15,7 +15,7 @@ function showDiv(str) {
 			  document.getElementById("DivLoad").innerHTML=xmlhttp.responseText;
 			}
 		  }
-		  xmlhttp.open("GET","GetDiv.php?q="+str,true);
+		  xmlhttp.open("GET","php/GetDiv.php?q="+str,true);
 		  xmlhttp.send();
 		}
 		
@@ -37,7 +37,7 @@ function LoadContentonclick(mdl,Div,Num) {
 			  document.getElementById("MainSession").innerHTML=xmlhttp.responseText;
 			}
 		  }
-			var str1 = "MainSession.php?q="+mdl;
+			var str1 = "php/MainSession.php?q="+mdl;
 			var str2 = "&d="+Div;
 			var str3 = "&n="+Num;
 			var res = str1.concat(str2,str3);

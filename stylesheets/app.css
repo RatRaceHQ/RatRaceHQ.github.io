@@ -2690,16 +2690,24 @@ html, body {
 */
 /* line 64, ../scss/app.scss */
 .header-wrapper {
-  border-bottom: 1px solid rgba(177, 187, 191, 0.4);
+  border-bottom: 3px solid rgba(177, 187, 191, 0.4);
 }
 
 /* line 68, ../scss/app.scss */
 .logo {
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
-/* line 74, ../scss/app.scss */
+/* line 72, ../scss/app.scss */
+.logo span {
+  font-size: 1.5em;
+  color: #544f4f;
+  font-weight: 400;
+  letter-spacing: 7px;
+}
+
+/* line 79, ../scss/app.scss */
 .page-wrapper {
   position: relative;
   outline: 0;
@@ -2707,14 +2715,14 @@ html, body {
   min-height: 500px;
 }
 
-/* line 80, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .content-wrapper {
   width: 50%;
   margin: 0 auto;
   padding: 50px 0;
 }
 
-/* line 87, ../scss/app.scss */
+/* line 92, ../scss/app.scss */
 .content-wrapper p {
   font-weight: 400;
   font-size: 18px;
@@ -2722,17 +2730,17 @@ html, body {
   margin: 0px 0px 15px 0px;
 }
 
-/* line 93, ../scss/app.scss */
+/* line 98, ../scss/app.scss */
 .content-wrapper h4 {
   margin-bottom: 25px;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 32px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
   text-indent: 0px;
-  color: #111111;
+  color: #544f4f;
 }
 
-/* line 101, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 .content-wrapper h6 {
   font-size: 25px;
   font-weight: 400;
@@ -2742,32 +2750,32 @@ html, body {
   margin: 0px 0px 15px 0px;
 }
 
-/* line 111, ../scss/app.scss */
+/* line 116, ../scss/app.scss */
 .breadcrumb_container {
   padding: 5px 20px;
   border-bottom: 1px solid rgba(177, 187, 191, 0.4);
   color: #b1bbbf;
 }
 
-/* line 116, ../scss/app.scss */
+/* line 121, ../scss/app.scss */
 .breadcrumb {
   margin: 0;
   padding: 0;
 }
 
-/* line 120, ../scss/app.scss */
+/* line 125, ../scss/app.scss */
 .breadcrumb p {
   margin: 0;
   padding: 0;
   font-size: .8em;
 }
 
-/* line 125, ../scss/app.scss */
+/* line 130, ../scss/app.scss */
 .breadcrumb span {
   margin: 0 5px;
 }
 
-/* line 134, ../scss/app.scss */
+/* line 139, ../scss/app.scss */
 .navigation {
   position: absolute;
   top: 0;
@@ -2787,16 +2795,6 @@ html, body {
   flex-direction: column;
 }
 
-/* vertical centering */
-/* line 153, ../scss/app.scss */
-.vertical-center {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-}
-
 /* line 162, ../scss/app.scss */
 .navigation:hover {
   text-decoration: none;
@@ -2804,23 +2802,23 @@ html, body {
 }
 
 /* line 168, ../scss/app.scss */
-.navigation-next {
+.navigation.navigation-next {
   right: 0;
 }
 
-/* line 174, ../scss/app.scss */
-.navigation-prev {
+/* line 173, ../scss/app.scss */
+.navigation.navigation-prev {
   left: 0;
 }
 
 /*----media queries -----*/
 @media screen and (max-width: 1024px) {
-  /* line 182, ../scss/app.scss */
+  /* line 180, ../scss/app.scss */
   .content-wrapper {
     width: 65%;
   }
 
-  /* line 187, ../scss/app.scss */
+  /* line 185, ../scss/app.scss */
   .navigation {
     position: static;
     top: auto;
@@ -2831,36 +2829,36 @@ html, body {
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 198, ../scss/app.scss */
+  /* line 196, ../scss/app.scss */
   .content-wrapper {
     width: 85%;
   }
 
-  /* line 201, ../scss/app.scss */
+  /* line 199, ../scss/app.scss */
   .content-wrapper h6 {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 207, ../scss/app.scss */
+  /* line 205, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 30px 0;
   }
 
-  /* line 211, ../scss/app.scss */
+  /* line 209, ../scss/app.scss */
   .content-wrapper p {
     font-size: 18px;
     line-height: 23px;
   }
 
-  /* line 215, ../scss/app.scss */
+  /* line 213, ../scss/app.scss */
   .content-wrapper h4 {
     font-size: 22px;
     line-height: 25px;
   }
 
-  /* line 219, ../scss/app.scss */
+  /* line 217, ../scss/app.scss */
   .content-wrapper h6 {
     font-size: 17px;
     line-height: 25px;
@@ -2868,13 +2866,13 @@ html, body {
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 228, ../scss/app.scss */
+  /* line 226, ../scss/app.scss */
   .content-wrapper {
     width: 90%;
     padding: 15px 0;
   }
 
-  /* line 233, ../scss/app.scss */
+  /* line 231, ../scss/app.scss */
   .content-wrapper p {
     font-size: 16px;
     line-height: 20px;

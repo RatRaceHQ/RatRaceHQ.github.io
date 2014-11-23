@@ -99,15 +99,12 @@
 .dropdown .selected,
 .dropdown li{
 	display: block;
-	font-size: .9em;
+	font-size: 1em;
 	line-height: 1;
-	color: #dddddd;
+	color: rgba(84, 79, 79, 1);
 	padding: 9px 12px;
 	overflow: hidden;
 	white-space: nowrap;
-}
-.dropdown li:last-child{
-	padding-bottom: 18px;
 }
 .dropdown .selected{
 	color:#FFF;
@@ -138,7 +135,7 @@
 	right: -1px;
 	top: 100%;
 	margin-top: -1px;
-	background:rgba(84, 79, 79, 1);
+	background: #fff;
 	border: 1px solid #ccc;
 	border-top: 1px solid #eee;
 	border-radius: 0 0 3px 3px;

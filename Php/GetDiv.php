@@ -17,9 +17,9 @@ include("dbinfo.inc.php");
 							$result = $conn->query($sql);
 							if ($result->num_rows > 0){
 								while($row = $result->fetch_assoc()) {
-									// $mdl=str_replace(" ","-",$Module1);
-									// $Div=str_replace(" ","-",$row["Division"]);
-									echo "<li><a  href='index.php?Module=".$Module1."&Content=".$row["Division"]."&Content_Num=1' >".$row["Division"]."</a></li>";
+									$mdl=str_replace(" ","-",$Module1);
+									$Div=str_replace(" ","-",$row["Division"]);
+									echo "<li><a ID='".$mdl."','".$Div."','1'   onclick=LoadContentonclick('".$mdl."','".$Div."','1') >".$row["Division"]."</a></li>";
 									}
 							}						
 						}
@@ -35,9 +35,9 @@ include("dbinfo.inc.php");
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0){
 									while($row = $result->fetch_assoc()) {
-									// $mdl=str_replace(" ","-",$Mdl);
-									// $Div=str_replace(" ","-",$row["Division"]);
-									echo "<li><a    href='index.php?Module=".$Mdl."&Content=".$row["Division"]."&Content_Num=1' >".$row["Division"]."</a></li>";
+									$mdl=str_replace(" ","-",$Mdl);
+									$Div=str_replace(" ","-",$row["Division"]);
+									echo "<li><a ID='".$mdl."','".$Div."','1'   onclick=LoadContentonclick('".$mdl."','".$Div."','1') >".$row["Division"]."</a></li>";
 									}
 							}		
 							}

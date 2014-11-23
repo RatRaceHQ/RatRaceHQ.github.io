@@ -43,48 +43,21 @@ Function LoadNavArrow($Present,$Max,$Module1,$Content1){
 	echo "</div>";
 	if ($Present==1){
 	echo "<a href='#' class='navigation navigation-prev'><i class='fa fa-angle-left'></i></a>";
-	$jl="href='#'";
 	}else{
 	$i=$Present-1;
-	$jl="href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."'";
-	echo "<a href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."' class='navigation navigation-prev'><i class='fa fa-angle-left'></i></a>";
+	echo "<a href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."' class='navigation navigation-prev'><i href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."' class='fa fa-angle-left'></i></a>";
 	}
 	
 	if ($Present==$Max){
 	echo "<a href='#' class='navigation navigation-next'><i class='fa fa-angle-right'></i></a>";
-	$jr="href='#'";
 	}else{
 	$i=$Present+1;
-	$jr="href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."'";
 	//echo $i;
-	// echo "<a href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."' class='navigation navigation-next'><i href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."' class='fa fa-angle-right'></i></a>";
-	echo "<a href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."' class='navigation navigation-next'><i class='fa fa-angle-right'></i></a>";	
-	}	
-	echo "</div>";	
+	echo "<a href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."' class='navigation navigation-next'><i href='index.php?Module=".$Module1."&Content=".$Content1."&Content_Num=".$i."' class='fa fa-angle-right'></i></a>";
+	}
 	
-	echo "
-	<script >
-	//keyboard shortcuts for next and prev
-	Mousetrap.bind('right', function() { window.location.".$jr.";});
-	Mousetrap.bind('left', function() { window.location.".$jl."; });
-
-	//swipe function for touch devices
-	$(function() {
-			//Enable swiping...
-			$(\".content-wrapper\").swipe({
-				//Generic swipe handler for all directions
-				swipeLeft: function(event, direction, distance, duration, fingerCount) {
-					window.location.".$jl.";
-				},
-				swipeRight: function(event, direction, distance, duration, fingerCount) {
-					window.location.".$jr.";
-				},
-				threshold: 0
-			});
-		});
-
-	</script>";
 	
+	echo "</div>";
 	$conn->close();
 }
 
@@ -106,12 +79,8 @@ function LoadDiv($Module1){
 							$result = $conn->query($sql);
 							if ($result->num_rows > 0){
 								while($row = $result->fetch_assoc()) {
-									$mdl=str_replace(" ","-",$Module1);
-									$Div=str_replace(" ","-",$row["Division"]);
-									//$mdl=str_replace(" ","-",$Module1);
-									//$Div=str_replace(" ","-",$row["Division"]);
-									echo "<li><a    href='index.php?Module=".$Module1."&Content=".$row["Division"]."&Content_Num=1' >".$row["Division"]."</a></li>";
-									}
+									echo "<li><a href='index.php?Module=".$Module1."&Content=".$row["Division"]."&Content_Num=1' >".$row["Division"]."</a></li>";
+								}
 							}						
 						}
 					}else{
@@ -126,9 +95,7 @@ function LoadDiv($Module1){
 								$result = $conn->query($sql);
 								if ($result->num_rows > 0){
 									while($row = $result->fetch_assoc()) {
-										// $mdl=str_replace(" ","-",$Mdl);
-									// $Div=str_replace(" ","-",$row["Division"]);
-									echo "<li><a    href='index.php?Module=".$Mdl."&Content=".$row["Division"]."&Content_Num=1' >".$row["Division"]."</a></li>";
+										echo "<li><a href='index.php?Module=".$Mdl."&Content=".$row["Division"]."&Content_Num=1' >".$row["Division"]."</a></li>";
 									}
 							}		
 							}

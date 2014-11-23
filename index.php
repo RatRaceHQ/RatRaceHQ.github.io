@@ -72,36 +72,9 @@
 					 //include("Funcphp.php");
 					 MainCont($_GET['Module'],$_GET['Content'],$_GET['Content_Num']);			
 				?> 
-	  				
-	  	</div>	
-	  </section>
-
-
+	  		</div>	</section>
 	  <footer></footer>
-	</div><!--wrapper ends-->
-
-
-<script >
-//keyboard shortcuts for next and prev
-Mousetrap.bind('right', function() { window.location.href = "http://stackoverflow.com";});
-Mousetrap.bind('left', function() { window.location.href = "http://google.com"; });
-
-//swipe function for touch devices
-$(function() {
-        //Enable swiping...
-        $(".content-wrapper").swipe({
-            //Generic swipe handler for all directions
-            swipeLeft: function(event, direction, distance, duration, fingerCount) {
-                window.location.href = "http://stackoverflow.com";
-            },
-            swipeRight: function(event, direction, distance, duration, fingerCount) {
-                window.location.href = "http://google.com";
-            },
-            threshold: 0
-        });
-    });
-
-</script>
+	</div><!--wrapper ends-->	
 
 </body>
 
